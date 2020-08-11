@@ -1,0 +1,509 @@
+
+/* ------ Specification ------ */
+
+body {
+	font: 400 14px 'Open Sans', sans-serif;
+	color: #6c7279;
+	padding: 0;
+	margin: 0;
+}
+
+p {
+	margin: 0;
+    font-size: 14px;
+    line-height: 1.4em;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+	color: #2d3033;
+	line-height: 1.6em;
+}
+
+h1, h4, h3, h5, .inform__int, .bat, .logo, .load__text {
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 45px;
+	color: #fff;
+}
+
+h2 {
+	font-size: 28px;
+}
+
+h3 {
+	font-size: 22px;
+}
+
+h4, h5 {
+	font-size: 14px;
+}
+
+a, a:hover, a:active {
+	text-decoration: none;
+}
+
+a, button {
+	transition: all 0.5s ease;
+}
+
+img {
+	max-width: 100%;
+}
+
+.bat {
+	display: block;
+	max-width: 202px;
+	background-color: #e84545;
+	border: 1px solid #e84545;
+	border-radius: 3px;
+	padding: 12px 0;
+	font-size: 13px;
+	color: #fff;
+	text-align: center;
+	font-weight: 700;
+	margin: 0 auto;
+}
+
+.bat:hover {
+	background-color: #fff;
+	color: #e84545;
+}
+
+.bat:focus {
+	box-shadow: none;
+}
+
+/* ------ Header ------ */
+
+.header {
+	background: #401772 url("../img/head.jpg") no-repeat top center / cover;
+	padding: 29px 0 245px;
+	color: #fff;
+}
+
+.logo {
+	font-weight: 400;
+	font-size: 30px;
+}
+
+.logo span {
+	font-weight: 700;
+	color: #626fe4;
+}
+
+.menu__link {
+	text-transform: uppercase;
+	color: #fff;
+	padding: 0 33px 39px 33px ;
+	border-bottom: solid 3px transparent;
+}
+
+.menu__link_last {
+	padding-right: 0;
+}
+
+.menu__link:hover {
+	color: #a6a4a4;
+	border-bottom: 3px solid rgba(161, 160, 163, 0.4);
+}
+
+.line {
+	background-color: #54545c;
+	padding: 1px 0;
+}
+
+.offer {
+	text-align: center;
+	margin-top: 30px;
+	padding-top: 169px;
+	border-top: 1px solid rgba(83, 83, 92, 0.6);
+}
+
+.offer__bat {
+	margin: 0 auto;
+}
+
+.offer__text {
+	font-size: 22px;
+	margin: 29px auto 30px;
+	padding: 0 20px;
+	max-width: 584px;
+}
+
+/* ------ Features ------ */
+
+.features {
+	padding: 119px 0 39px;
+}
+
+.feature {
+	text-align: center;
+	margin: 0 auto 78px;
+	max-width: 320px;
+}
+
+.feature__title {
+	margin: 28px 0 17px;
+}
+
+/* ------ Work ------ */
+
+.work-section {
+	padding: 8px 0 102px;
+}
+
+.work {
+	position: relative;
+	margin-bottom: 27px;
+}
+
+.work__img {
+	display: block;
+}
+
+.work__overlay {
+	background: rgba(211, 64, 63, 0.64);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: all 0.5s ease;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.work__title {
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+.work__text {
+	color: #fff;
+	border-bottom: 1px solid #fff;
+}
+
+.work__text:hover {
+	color: #fff;
+	border-bottom: 1px solid transparent;
+}
+
+.work:hover .work__overlay  {
+	opacity: 1;
+}
+
+/* ------ Team ------ */
+
+.team {
+	background-color: #f1f2fd;
+	padding: 124px 0 114px;
+}
+
+.personal {
+	max-width: 275px;
+}
+
+.personal__title {
+	margin: 22px 0 2px;
+	text-transform: none;
+}
+
+.personal__bio {
+	font-size: 13px;
+	color: #e84545;
+	font-weight: 400;
+}
+
+.personal__info {
+	margin: 22px 0 26px;
+	line-height: 1.5em;
+}
+
+.personal__item:not(:last-child) {
+	margin-right: 4px;
+}
+
+.personal__soc {
+	display: flex;
+}
+
+.personal__link {
+	display: block;
+	width: 40px;
+	height: 40px;
+	border: solid 1px #e8ecee;
+	background-color: #fff;
+	color: #c6cacc;
+	text-align: center;
+	line-height: 40px;
+	font-size: 18px;
+}
+
+.personal__link:hover {
+	color: #fff;
+}
+
+.personal__link_face:hover{
+	background-color: #2724aa;
+}
+
+.personal__link_twit:hover{
+	background-color: #15788d;
+}
+
+.personal__link_link:hover{
+	background-color: #0c428d;
+}
+
+/* ------ Wow ------ */
+
+.workspace {
+	background: url('../img/girl.jpg') no-repeat center top / cover;
+	height: 100%;
+}
+
+.inform {
+	background-color: #53354a;
+	padding: 130px 60px 154px 70px;
+	width: 100%;
+	color: #e8e4e7;
+	margin: 0;
+}
+
+.inform__title {
+	width: 400px;
+}
+
+.inform__text {
+	font-style: italic;
+	font-size: 36px;
+	max-width: 506px;
+	line-height: 1.2em;
+	margin-bottom: 25px;
+}
+
+.inform__int{
+	font-size: 13px;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: 0.01em;
+}
+
+/* ------ Start ------ */
+
+.start {
+	padding: 88px 0 102px;
+	text-align: center;
+}
+
+.load__title {
+	margin-bottom: 5px;
+}
+
+.load__text {
+	font-size: 13px;
+	color: #2d3033;
+	margin-bottom: 37px;
+}
+
+.load__bat {
+	max-width: 280px;
+	border: solid 1px transparent;
+}
+
+.load__bat:hover {
+	border: solid 1px #e84545;
+}
+
+/* ------ Footer ------ */
+
+.footer {
+	background-color: #3a3e64;
+	box-shadow: inset 11px -34px 8px -21px rgba(49,52,84,1);
+	padding: 79px 0;
+	color: #83859d;
+}
+
+.author-info {
+	text-align: center;
+	max-width: 335px;
+}
+
+.author-info__title {
+	margin-bottom: 14px;
+}
+
+.author-info__text-center {
+	color: #77777c;
+}
+
+.author-info__text-first {
+	color: #e84545;
+}
+
+.author-info__title, .author-info__text-second  {
+	color: #fff;
+}
+
+/* Media Queries */
+
+/* 768 - 992 px */
+@media screen and (max-width: 992px) {
+
+	.menu {
+		margin-top: 30px;
+	}
+
+	.menu__link, .menu__link_last {
+		padding: 0 33px 27px 33px ;
+	}
+
+	.offer__title {
+		line-height: 1.3em;
+	}
+
+	.team {
+		padding-bottom: 70px;
+	}
+
+	.personal {
+		margin-bottom: 25px;
+	}
+
+	.workspace {
+		height: 450px;
+	}
+
+	.inform {
+		text-align: center;
+		padding: 35px;
+	}
+
+	.inform__text {
+		font-size: 33px;
+		max-width: 100%;
+		padding: 0 40px;
+	}
+
+	.footer {
+		padding: 60px 0 30px;
+	}
+
+	.author-info {
+		margin: 0 auto 30px;
+	}
+}
+
+/* 576 - 768 px */
+@media screen and (max-width: 768px) {
+
+	.header {
+		padding: 30px 0 90px;
+	}
+
+	.logo {
+		font-size: 25px;
+	}
+
+	.offer {
+		padding-top: 100px;
+	}
+
+	.offer__title {
+		font-size: 33px;
+	}
+
+	.offer__text {
+		font-size: 19px;
+	}
+
+	.workspace {
+		height: 300px;
+	}
+
+	.inform__text {
+		font-size: 29px;
+	}
+
+	.load__title {
+		font-size: 24px;
+	}
+}
+
+/* 320 - 576 px */
+@media screen and (max-width: 576px) {
+
+	.logo, .load__title {
+		font-size: 22px;
+	}
+
+	.offer__title {
+		font-size: 26px;
+	}
+
+	.offer__text {
+		font-size: 18px;
+	}
+
+	.work-section {
+		padding-bottom: 20px;
+	}
+
+	.team {
+		padding-top: 40px;
+	}
+
+	.personal__title {
+		font-size: 17px;
+	}
+
+	.personal {
+		text-align: center;
+	}
+
+	.personal__soc {
+		justify-content: center;
+		margin: 0;
+	}
+
+	.feature {
+		margin-bottom: 35px;
+	}
+
+	.workspace {
+		height: 250px;
+	}
+
+	.inform {
+		padding: 25px 20px;
+	}
+
+	.inform__text {
+		font-size: 20px;
+		padding: 0
+	}
+
+	.inform__int {
+		font-size: 14px;
+	}
+
+	.load__title {
+		font-size: 22px;
+	}
+
+	.load__text {
+		font-size: 12px;
+	}
+}
