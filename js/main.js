@@ -1,5 +1,4 @@
 // Функция переключения табов Tab
-
     $('.tabs').on('click', function () {
         var currTab = $(this).index();
 
@@ -10,32 +9,26 @@
         $('.tab-content').eq(currTab).addClass('active');
     });
 
-// Функция HamBurger
+    // Функция HamBurger
+    document.querySelector('.menu__btn').addEventListener('click', function(){
+        document.querySelector('.menu__btn span').classList.toggle('active');
+        document.querySelector('.menu').classList.toggle("animate");
+      });
 
-    $('.menu__icon').on('click', function () {
-       $('.burger').toggle();
-    });
-
-    $('.burger__closed').on('click', function () {
-        $('.burger').hide();
-    });
 
     // Функция Modal Window
-
     $('.btn-call, .offer__btn, .help-info__bat_up, .help-info__bat_down, .call__btn').on('click', function () {
-        $('.window').toggle();
+        $('.window').fadeIn('slow');
     });
 
     $('.window__closed').on('click', function () {
-        $('.window').hide();
+        $('.window').hide('slow');
     });
 
 // Функция Up navigator
-
 $(window).on('scroll resize', function () {
     var pixelTop = $(window).scrollTop();
-
-    if (pixelTop > 0 && $(document).width() > 998) {
+    if (pixelTop > 0 ) {
         $('.navigation').addClass('active');
     } else  if (pixelTop < 1) {
         $('.navigation').removeClass('active');
@@ -43,12 +36,10 @@ $(window).on('scroll resize', function () {
 });
 
 // Функция Parallax
-
     var scene = $('#scene').get(0);
     var parallaxInstance = new Parallax(scene);
 
 // Функция SLIDER
-
 var mySwiper = new Swiper ('.swiper-container', {
     direction : 'horizontal',
     spaceBetween : 20,
@@ -82,7 +73,6 @@ var mySwiper = new Swiper ('.swiper-container', {
 });
 
 // Функция Validation
-
     $(".footer-form__input, .window__form").validate({
         rules : {
             firstName : {
@@ -108,7 +98,7 @@ var mySwiper = new Swiper ('.swiper-container', {
     });
 
     //Map
-    function initMap() {
+/*    function initMap() {
         var myLatLng = {lat: 55.8020011, lng: 37.5830611};
         var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 16,
@@ -123,7 +113,7 @@ var mySwiper = new Swiper ('.swiper-container', {
 
         marker.setMap(map);
     }
-
+*/
 
 
 

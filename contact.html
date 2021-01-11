@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contact</title>
+    <link rel="shortcut icon" href="/img/icon.jpg" type="image/jpg">
     <meta name="discription" content="Мы современная Юридическая фирма, помогающая перспективным стартапам, фрилансерам и малому бизнесу.">
     <meta name="kaywords" content="Юридическая фирма, помогающая перспективным стартапам">
     <!-- Bootstrap CSS -->
@@ -12,73 +13,78 @@
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOx-nXNURNxTLydC675nRB7lWqBGkRbRk&callback=initMap">
     </script>
     <!-- Main CSS -->
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
     <!--Header-->
     <header id="header" class="header">
         <div id="navigation" class="navigation navigation-static">
-            <div class="container">
-                <div class="row d-flex align-items-center">
-                    <div class="col-9 col-md-6 col-lg-3">
-                        <a href="index.html" class="logo">
-                            <span class="logo__first">jc</span>
-                            <span class="logo__second">legal Advisory Services</span>
-                        </a>
-                    </div>
-                    <div class="col-lg-6 d-none d-lg-block">
-                        <nav class="menu">
-                            <ul class="menu__list d-flex">
-                                <li>
-                                    <a href="index.html">
-                                        Главная
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="about.html">
-                                        О компании
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="services.html">
-                                        Услуги
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="contact.html">
-                                        Контакты
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="review.html">
-                                        Отзывы
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="col-3 d-flex col-md-6 col-lg-3">
-                        <button type="button" class="btn-call d-none d-md-block">
-                            <span class="btn-call__text">
-                                Заказать звонок
-                            </span>
-                            <span class="btn-call__number">
-                                + 7 (495) 567-28-15
-                            </span>
-                        </button>
-                        <!--Icon Menu-->
-                        <div class="menu__icon d-block ml-auto d-lg-none">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <!--/Icon Menu-->
-                    </div>
-                </div>
-            </div>
-        </div>
+			<div class="container">
+				<div class="row d-flex align-items-center">
+					<div class="col-9 col-md-5 col-lg-3">
+						<a href="index.html" class="logo">
+							<span class="logo__first">jc</span>
+							<span class="logo__second">legal Advisory Services</span>
+						</a>
+					</div>
+					<div class="col-2 col-lg-6">
+						<nav class="menu">
+							<ul class="menu__list d-flex">
+								<li>
+									<a href="index.html">
+										Главная
+									</a>
+								</li>
+								<li>
+									<a href="about.html">
+										О компании
+									</a>
+								</li>
+								<li>
+									<a href="services.html">
+										Услуги
+									</a>
+								</li>
+								<li>
+									<a href="contact.html">
+										Контакты
+									</a>
+								</li>
+								<li>
+									<a href="review.html">
+										Отзывы
+									</a>
+								</li>
+							</ul>
+							<button type="button" class="btn-call menu-call">
+								<span class="btn-call__text">
+									Заказать звонок
+								</span>
+								<span class="btn-call__number">
+									+ 7 (495) 567-28-15
+								</span>
+							</button>
+						</nav>
+					</div>
+					<div class="col-4 d-flex col-lg-3">
+						<button type="button" class="btn-call d-none d-md-block">
+							<span class="btn-call__text">
+								Заказать звонок
+							</span>
+							<span class="btn-call__number">
+								+ 7 (495) 567-28-15
+							</span>
+						</button>
+					</div>
+					<div class="menu__btn">
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>
         <div class="black">
             <div class="container">
                 <div class="row">
@@ -109,7 +115,7 @@
     <section id="contact" class="contact">
         <div class="container">
             <div class="row">
-                <div class="col d-flex justify-content-md-end">
+                <div class="col d-flex justify-content-md-start">
                     <div class="connect">
                         <p class="connect__title">
                             Как нас найти
@@ -157,7 +163,7 @@
             <div class="row no-gutters">
                 <div class="col">
                     <div id="map" class="map">
-
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2242.464153119505!2d37.58167001593247!3d55.80254198056672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b549fcd3aad429%3A0xae911a34e0878489!2z0JHRg9GC0YvRgNGB0LrQsNGPINGD0LsuLCA2Miwg0JzQvtGB0LrQstCwLCDQoNC-0YHRltGPLCAxMjcwMTU!5e0!3m2!1suk!2sua!4v1610276115830!5m2!1suk!2sua" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
                 </div>
             </div>
@@ -298,79 +304,30 @@
 
     <!--Modal window-->
     <div class="window">
-        <form action="" class="window__form">
-            <span class="window__closed">
-                &Chi;
-            </span>
-            <h3 class="window__title">
-                Отправьте заявку
-            </h3>
-            <p class="window__text">
-                И наши специалисты свяжутся с вами ближайшее время для оказания профессиональной помощи!
-            </p>
-            <h5 class="input__title">
-                Имя
-            </h5>
-            <input type="text" name="firstName" placeholder="" class="window__input">
-            <h5 class="input__title">
-                Телефон
-            </h5>
-            <input type="tel" name="phoneNumber" placeholder="" class="window__input">
-            <button type="submit" class="window__submit bat">
-                Оставить
-            </button>
-        </form>
-    </div>
+		<form action="send.php" method="POST" class="window__form">
+			<span class="window__closed">
+				&Chi;
+			</span>
+			<h3 class="window__title">
+				Отправьте заявку
+			</h3>
+			<p class="window__text">
+				И наши специалисты свяжутся с вами ближайшее время для оказания профессиональной помощи!
+			</p>
+			<h5 class="input__title">
+				Имя
+			</h5>
+			<input type="text" name="firstName" placeholder="Ваше имя" class="window__input">
+			<h5 class="input__title">
+				Телефон
+			</h5>
+			<input type="tel" name="phoneNumber" placeholder="Ваш номер телефона" pattern="2[0-9]{3}-[0-9]{3}" required class="window__input">
+			<button type="submit" class="window__submit bat">
+				Оставить
+			</button>
+		</form>
+	</div>
     <!--/Modal window-->
-
-    <!--Menu-hamburger-->
-    <div id="burger" class="burger">
-        <nav id="burger__menu" class="burger__menu">
-            <a href="#" class="burger__logo logo">
-                <span class="burger__first logo__first">jc</span>
-                <span class="burger__second logo__second">legal Advisory Services</span>
-            </a>
-            <span class="burger__closed">
-                &Chi;
-            </span>
-            <ul>
-                <li class="burger__list">
-                    <a href="index.html">
-                        Главная
-                    </a>
-                </li>
-                <li class="burger__list">
-                    <a href="about.html">
-                        О компании
-                    </a>
-                </li>
-                <li class="burger__list">
-                    <a href="services.html">
-                        Услуги
-                    </a>
-                </li>
-                <li class="burger__list">
-                    <a href="contact.html">
-                        Контакты
-                    </a>
-                </li>
-                <li class="burger__list">
-                    <a href="review.html">
-                        Отзывы
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <button type="button" class="burger__bat btn-call">
-				<span class="burger__text btn-call__text">
-					Заказать звонок
-				</span>
-            <span class="burger__number btn-call__number">
-					+ 7 (495) 567-28-15
-				</span>
-        </button>
-    </div>
-    <!--/Menu-gam-->
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
