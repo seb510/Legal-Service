@@ -47,7 +47,7 @@ var mySwiper = new Swiper ('.swiper-container', {
     loop : true,
     stopOnLastSlide : false,
     autoplay : {
-        delay: 3000
+        delay: 2000
     },
     breakpoints: {
         // when window width is >= 320px
