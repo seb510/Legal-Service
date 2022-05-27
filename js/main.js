@@ -1,52 +1,55 @@
 // Функция переключения табов Tab
-    $('.tabs').on('click', function () {
-        var currTab = $(this).index();
+$('.tabs').on('click', function() {
+    var currTab = $(this).index();
 
-        $('.tabs').removeClass('tabs-active');
-        $(this).addClass('tabs-active');
+    $('.tabs').removeClass('tabs-active');
+    $(this).addClass('tabs-active');
 
-        $('.tab-content').removeClass('active');
-        $('.tab-content').eq(currTab).addClass('active');
-    });
+    $('.tab-content').removeClass('active');
+    $('.tab-content').eq(currTab).addClass('active');
+});
 
-    // Функция HamBurger
-    document.querySelector('.menu__btn').addEventListener('click', function(){
-        document.querySelector('.menu__btn span').classList.toggle('active');
-        document.querySelector('.menu').classList.toggle("animate");
-      });
+// Функция HamBurger
+document.querySelector('.menu__btn').addEventListener('click', function() {
+    document.querySelector('.menu__btn span').classList.toggle('active');
+    document.querySelector('.menu').classList.toggle("animate");
+});
 
 
-    // Функция Modal Window
-    $('.btn-call, .offer__btn, .help-info__bat_up, .help-info__bat_down, .call__btn').on('click', function () {
-        $('.window').fadeIn('slow');
-    });
+// Функция Modal Window
+$('.btn-call, .offer__btn, .help-info__bat_up, .help-info__bat_down, .call__btn').on('click', function() {
+    $('.window').fadeIn('slow');
+});
 
-    $('.window__closed').on('click', function () {
-        $('.window').hide('slow');
-    });
+$('.window__closed').on('click', function() {
+    $('.window').hide('slow');
+});
 
 // Функция Up navigator
-$(window).on('scroll resize', function () {
+$(window).on('scroll resize', function() {
     var pixelTop = $(window).scrollTop();
-    if (pixelTop > 0 ) {
+    if (pixelTop > 0) {
         $('.navigation').addClass('active');
-    } else  if (pixelTop < 1) {
+    } else if (pixelTop < 1) {
         $('.navigation').removeClass('active');
     }
 });
 
 // Функция Parallax
-    var scene = $('#scene').get(0);
-    var parallaxInstance = new Parallax(scene);
+var scene = $('#scene').get(0);
+var parallaxInstance = new Parallax(scene);
+
+var scene2 = $('#scene2').get(0);
+var parallaxInstance = new Parallax(scene2);
 
 // Функция SLIDER
-var mySwiper = new Swiper ('.swiper-container', {
-    direction : 'horizontal',
-    spaceBetween : 20,
+var mySwiper = new Swiper('.swiper-container', {
+    direction: 'horizontal',
+    spaceBetween: 20,
     slidesPerView: 3,
-    loop : true,
-    stopOnLastSlide : false,
-    autoplay : {
+    loop: true,
+    stopOnLastSlide: false,
+    autoplay: {
         delay: 2000
     },
     breakpoints: {
@@ -56,7 +59,7 @@ var mySwiper = new Swiper ('.swiper-container', {
             spaceBetween: 10
         },
         // when window width is >= 768px
-       768: {
+        768: {
             slidesPerView: 2,
             spaceBetween: 10
         },
@@ -73,31 +76,31 @@ var mySwiper = new Swiper ('.swiper-container', {
 });
 
 // Функция Validation
-    $(".footer-form__input, .window__form").validate({
-        rules : {
-            firstName : {
-                required : true
-            },
-            phoneNumber : {
-                digits : true,
-                required : true,
-                minlength: 10,
-                maxlength: 11
-            },
-            email: {
-                required : true,
-                minlength: 10,
-                maxlength: 11
-            }
+$(".footer-form__input, .window__form").validate({
+    rules: {
+        firstName: {
+            required: true
         },
-        messages: {
-            firstName : 'Введите ваше имя правильно',
-            phoneNumber: 'Введите ваш номер',
-            email: 'Введите ваш электронный адресс'
+        phoneNumber: {
+            digits: true,
+            required: true,
+            minlength: 10,
+            maxlength: 11
+        },
+        email: {
+            required: true,
+            minlength: 10,
+            maxlength: 11
         }
-    });
+    },
+    messages: {
+        firstName: 'Введите ваше имя правильно',
+        phoneNumber: 'Введите ваш номер',
+        email: 'Введите ваш электронный адресс'
+    }
+});
 
-    //Map
+//Map
 /*    function initMap() {
         var myLatLng = {lat: 55.8020011, lng: 37.5830611};
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -114,8 +117,3 @@ var mySwiper = new Swiper ('.swiper-container', {
         marker.setMap(map);
     }
 */
-
-
-
-
-
